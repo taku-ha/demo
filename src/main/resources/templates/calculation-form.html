@@ -6,11 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <form th:action="@{/cal}" method="post">
-    計算
-    <input type="text" name="number1" th:field="{number1}"> + <input type="text" name="number2" th:field="{number2}"><br>
-    <button>送信</button>
-
-   </form>
+    <form action="answer.html"
+        th:action="@{/calc/answer}" method="post">
+        <h3>計算式</h3><br>
+        <input type="text" name="num1"> + <input type="text" name="num2"><br><br>
+        <button>計算</button>
+    </form>
 </body>
 </html>

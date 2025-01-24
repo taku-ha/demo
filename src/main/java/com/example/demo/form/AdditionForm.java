@@ -1,33 +1,33 @@
 package com.example.demo.form;
 
 public class AdditionForm {
-    private int num1 = 0;
-    private int num2 = 0;
-    private int total = 0;
+    private String num1;
+    private String num2;
 
-    
-    public int getNum1() {
+    public int getintNum1() {
+        return Integer.parseInt(num1);
+    }
+    public int getintNum2() {
+        return Integer.parseInt(num2);
+    }
+    public String getNum1() {
         return num1;
     }
-    public void setNum1(int num1) {
+    public void setNum1(String num1) {
         this.num1 = num1;
     }
-    public int getNum2() {
+    public String getNum2() {
         return num2;
     }
-    public void setNum2(int num2) {
+    public void setNum2(String num2) {
         this.num2 = num2;
     }
-    public int getTotal() {
-        return total;
-    }
-    public void setTotal(int total) {
-        this.total = total;
+    
+    @Override
+    public String toString() {
+        return "AdditionForm [num1=" + num1 + ", num2=" + num2 + "]";
     }
 
-    public void sumTotal() {
-        total = this.num1 + this.num2;
-        setTotal(total);
-    }
     
+
 }
